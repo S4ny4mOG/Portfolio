@@ -1,0 +1,585 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(0, 34, 77);
+  color: #eefbe7;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background-color: rgb(0, 34, 77);
+  color: #eefbe7;
+  padding: 20px 0;
+  animation: fadeInDown 1s ease-in-out;
+}
+
+
+ 
+header h1 {
+  font-size: 36px;
+  text-align: center;
+  color: rgb(255, 32, 78);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+  opacity: 1;
+}
+
+
+nav ul li a {
+  color: #eefbe7;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: rgb(255, 32, 78);
+}
+
+main {
+  padding: 20px 0;
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+section {
+  margin-bottom: 40px;
+}
+
+section h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: #eefbe7;
+}
+
+.project {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 52px;
+  padding: 20px;
+  margin-bottom: 20px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+.project:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.project:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(255, 32, 78);
+}
+
+.project p {
+  font-size: 16px;
+  color: #ccc;
+}
+
+form {
+  max-width: 500px;
+  margin: 0 auto;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+form label {
+  display: block;
+  margin-bottom: 10px;
+  color: #eefbe7;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #444;
+  border-radius: 52px;
+  background-color: #333;
+  color: #eefbe7;
+}
+
+button {
+  background-color: #010101;
+  color: #1c1c1c;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 52px;
+  cursor: pointer;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+button:hover {
+  background-color: #ff9933;
+}
+
+footer {
+  background-color: #232c257f;
+  color: #eefbe7;
+  text-align: center;
+  padding: 20px 0;
+  opacity: 0;
+  animation: fadeInUp 1s ease-in-out forwards;
+}
+
+nav {
+  background-color: #232c257f;
+  padding: 10px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  color: #eefbe7;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 52px;
+  transition: background-color 0.3s ease;
+}
+
+nav ul li a:hover {
+  background-color: #555;
+}
+
+#about {
+  background-color: #426b3d;
+  color: #eefbe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(255, 32, 78);
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about .btn {
+  display: inline-block;
+  background-color: rgb(255, 32, 78);
+  color: #232c257f;
+  padding: 10px 20px;
+  border-radius: 52px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+#about .btn:hover {
+  transform: scale(1.2);
+}
+
+#projects {
+  background-color: #232c257f;
+  color: #eefbe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#projects h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(255, 32, 78);
+}
+
+.project {
+  background-color: #333;
+  border: 1px solid #444;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.project:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(255, 32, 78);
+}
+
+.project p {
+  font-size: 16px;
+  color: #ccc;
+} 
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.github-btn {
+  display: inline-block;
+  background-color: #5D0E41;
+  color: #232c257f;
+  padding: 6px 16px;
+  border-radius: 52px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.github-btn:hover {
+  transform: scale(1.1);
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+#contact {
+  background-color: #232c257f;
+  color: #eefbe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#contact h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(255, 32, 78);
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  color: rgb(255, 32, 78);
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  border: 1px solid #323734aa;
+  resize: none;
+  background-color: #323734aa;
+  color: #eefbe7;
+}
+
+#contact-form button {
+  display: inline-block;
+  background-color: #5D0E41;
+  color: rgb(0, 34, 77);
+  padding: 10px 20px;
+  border-radius: 52px;
+  border: none;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+#contact-form button:hover {
+  transform: scale(1.1);
+  background-color: #7dec6fa5;
+}
+
+#contact-form button:active {
+  transform: scale(0.95);
+}
+
+#about {
+  background-color: #232c257f;
+  color: #eefbe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+#about h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(255, 32, 78);
+}
+
+#about p {
+  font-size: 18px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+#about .btn {
+  display: inline-block;
+  background-color: #5D0E41;
+  color: rgb(0, 34, 77);
+  padding: 10px 20px;
+  border-radius: 52px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+}
+
+#about .btn:hover {
+  transform: scale(1.2);
+}
+
+#projects {
+  background-color: #232c257f;
+  color: #eefbe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+
+#projects h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(255, 32, 78);
+}
+
+.project {
+  background-color: #1f2f258b;
+  border: 1px solid #1f2f258b;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+  transition: transform 0.2s ease;
+}
+
+.project:hover {
+  transform: translateY(-5px) scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.project:nth-child(even) {
+  animation-delay: 0.2s;
+}
+
+.project:nth-child(odd) {
+  animation-delay: 0.4s;
+}
+
+.project h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  color: rgb(255, 32, 78);
+}
+
+.project p {
+  font-size: 16px;
+  color: #eefbe7;
+}
+
+.github-icon {
+  width: 20px;
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+.github-btn {
+  display: inline-block;
+  background-color: #5D0E41;
+  color: rgb(0, 34, 77);
+  padding: 6px 16px;
+  border-radius: 52px;
+  text-decoration: none;
+  transition: transform 0.2s ease;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.github-btn:hover {
+  transform: scale(1.1);
+}
+
+#socials {
+  background-color: #232c257f;
+  color: #eefbe7;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+.scontainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#socials h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(255, 32, 78);
+}
+
+.social-links {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+.social-links a {
+  display: inline-flex;
+  align-items: center;
+  color: #5D0E41;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #000;
+}
+
+.social-links a i {
+  margin-right: 10px;
+  font-size: 24px;
+  border-radius: 50%;
+  background-color: #5D0E41;
+  color: #232c257f;
+  padding: 8px;
+  transition: transform 0.2s ease;
+}
+
+.social-links a i:hover {
+  transform: scale(1.1);
+}
+
+#socials p {
+  font-size: 16px;
+  margin-top: 20px;
+}
+
+#socials {
+  background-color: #232c257f;
+  color: #eefbe7;
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+#socials h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+  color: rgb(255, 32, 78);
+}
+
+.social-links {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+.social-links a {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #5D0E41;
+  color: #000;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 5px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #5c9163;
+  transform: scale(1.1);
+}
+
+.social-icon {
+  background-color: #fff;
+  color: #000;
+}
